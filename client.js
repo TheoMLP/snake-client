@@ -1,6 +1,5 @@
 const net = require("net");
 
-
 const connect = function(){
   const conn = net.createConnection({
     host: "192.168.0.102",
@@ -25,7 +24,7 @@ const connect = function(){
   
   conn.setEncoding("utf8");
 
-  conn.on("connect", moveSnake)
+  conn.on("connect", nameAndMove)
   
   conn.on("data", (data) => {
     console.log(data);
