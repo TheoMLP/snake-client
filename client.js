@@ -9,9 +9,9 @@ const connect = function(){
   
   const nameAndMove = () => {
     console.log("Successfully connected to the game server");
-    conn.write("Name: THM")
+    conn.write("Name: OOF")
   }
-  
+
   conn.setEncoding("utf8");
 
   conn.on("connect", nameAndMove)
