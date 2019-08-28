@@ -9,6 +9,14 @@ const handleUserInput = (key, connection) => {
     connection.write("Move: left");
   } else if (key === "\u0064") {
     connection.write("Move: right");
+  } else if (key === "\u0065") {
+    connection.write("Say: Eat my tail");
+  } else if (key === "\u0061") {
+    connection.write("Say: out of my way");
+  } else if (key === "\u0072") {
+    connection.write("Say: I will eat");
+  } else if (key === "\u0077") {
+    connection.write("Say: I always win");
   }
 };
 
